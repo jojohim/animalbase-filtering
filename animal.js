@@ -3,8 +3,6 @@
 window.addEventListener("DOMContentLoaded", start);
 
 let allAnimals = [];
-console.log(allAnimals);
-
 let filter;
 
 // The prototype for all animals: 
@@ -85,7 +83,7 @@ function displayAnimal(animal) {
 function checkFilter(event){
 
 filter = event.target.dataset.filter;
-console.log(filter);
+
 const filteredAnimals = filterAnimals();
 displayList(filteredAnimals);
 }
